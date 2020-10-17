@@ -38,8 +38,8 @@ fn main() {
     println!("Desconto .........: {:8.2}", td);
     println!("Salario liquido ..: {:8.2}", sl);
 
-    println!("");
+    println!();
     print!("Tecle <ENTER> para encerrar...");
     io::stdout().flush().unwrap();
-    io::stdin().read(&mut [0u8]).unwrap();
+    io::stdin().read_exact(&mut [0u8]).unwrap();
 }
